@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, inital-scale = 1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 class = "heading1">First Heading</h1>
+    <p>Loreum ipsum dolor</p>
+    <br>
+    <h1 class = "heading 2">Second heading</h1>
+    <p id = "p2">Lorem ipsum dolor</p>
+    <br>
+    <input type = "button" value = "hide" id = "hide">
+    <input type = "button" value = "show" class = "show">
+    <script>
+        $(document).ready(function(){
+            $("$hide").click(function(){
+                $("h1.heading1").hide();
+                $("h1.heading2").hide();
+                $("p#p1").hide();
+        })
+        $(".show").click(function(){
+            $("h1.heading1").show();
+            $("h1.heading2").show();
+            $("p#p1").show();
+        })
+    </script>
+</body>
+</html>
